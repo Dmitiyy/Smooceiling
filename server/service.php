@@ -1,11 +1,9 @@
 <?php 
-    $name = htmlspecialchars($_POST['name']);
-    $phone = htmlspecialchars($_POST['phone']);
+    $phone = htmlspecialchars($_POST['num']);
 
     function send () {
-        global $name;
         global $phone;
-        $message = "Имя: $name\nТелефон: $phone";
+        $message = "Заявка со страницы 'Сервис'\nТелефон: $phone";
         $to = 'dmitriyy311@gmail.com';
         $subject = 'Заявка с сайта';
         $headers = 'From: webmaster@example.com' . "\r\n" .

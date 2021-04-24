@@ -315,10 +315,10 @@
         <div class="modal-container">
             <div class="modal-wrap">
                 <h2 class="modal-title">Форма обратной связи</h2>
-                <form class="modal-form">
-                    <input type="text" placeholder="Ваше имя" class="modal-form__input">
-                    <input type="text" placeholder="Номер телефона" class="modal-form__input inp_num11">
-                    <button class="modal-form__btn">Отправить</button>
+                <form class="modal-form" action="./server/server.php" method="POST">
+                    <input type="text" name="name" placeholder="Ваше имя" class="modal-form__input inp_name">
+                    <input type="text" name="phone" placeholder="Номер телефона" class="modal-form__input inp_phone inp_num11">
+                    <button type="submit" class="modal-form__btn">Отправить</button>
                 </form>
             </div>
         </div>
